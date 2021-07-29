@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  padding: 0;
+  margin: 0;
+}
+/*
+========================================================================================================================
+HEADER
+========================================================================================================================
+*/
+header {
+  background-color: #EAC926;
+}
+
+.logo {
+  width: 200px;
+  padding: 10px;
+}
+
+header nav {
+  padding: 10px;
+}
+
+.header-titulo {
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+
+.search {
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  top: 13px;
+  left: 190px;
+}
+
+nav ul {
+  padding: 10px;
+  margin-left: 10px;
+  display: none;
+}
+
+.hamburger-button {
+  background-color: blue;
+  color: #ffffff;
+  display: block;
+  max-width: 50px;
+  padding: 15px 0px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 20px;
+  margin: auto;
+}
+
+.banner {
+  width: 100%;
+  padding-top: 10px;
+}
+/*
+========================================================================================================================
+MAIN
+========================================================================================================================
+*/
+.ultima-visita, .ofertas {
+  font-size: 24px;
+  padding: 20px;
+  background-color: #ebebeb;
+  margin: 30px 10px 0 10px;
+}
+
+.dwg {
+  border: 15px solid #ebebeb;
+  transition: box-shadow 10ms;
+  margin: 10px;
+}
+
+.dwg:hover {
+  box-shadow : 0px 0px 10px rgb(100,100,100);
+}
+
+.imagen {
+  width: 100%;
+  margin: auto;
+}
+
+.dwg-lpdd {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+.precio {
+  font-size: 18px;
+}
+
+.descuento, .descripcion {
+  font-size: 16px;
+}
+
+.descuento {
+  color: #39b54a;
+}
+
+.descripcion {
+  margin-top: 15px;
+  opacity: 0;
+  transition: opacity 1ms;
+}
+
+.descripcion:hover {
+  opacity: 1;
+}
+
+.fa-truck {
+  color: #39b54a;
+  padding: 10px;
+  border: 1px solid #39b54a;
+  border-radius: 50%;
+  position: relative;
+  left: 90%;
+  top: -30px;
+}
+
+.pd-flex {
+  display: flex;
+}
+
+.precio {
+  flex-grow: 0.3;
+}
+
+.descuento {
+  flex-grow: 0.7;
+}
+/*
+========================================================================================================================
+FOOTER
+========================================================================================================================
+*/
+footer {
+  text-align: center;
+}
+
+footer .fas {
+  color: blue;
+  display: block;
+  padding: 10px;
+  border-bottom: 10px;
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+.copyright {
+  text-align: left;
+  margin-top: 20px;
+}
+/*
+========================================================================================================================
+MEDIA QUERIES 361px
+========================================================================================================================
+*/
+@media (min-width: 361px) {
+  .logo-text {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items:center;
+  }
+
+  .descripcion {
+    display: block;
+  }
+  
+  .dwg, .ultima-visita, .ofertas {
+    box-shadow : 0px 0px 10px rgb(100,100,100);
+  }
+
+  .hamburger-button {
+    display: none;
+  }
+
+  .imagenesx2 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .nav-bars {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-menu {
+    list-style-type: none;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+
+  .left-menu li {
+    width: auto;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .right-menu {
+    list-style-type: none;
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    }
+
+  .right-menu li {
+    width: auto;
+    padding: 5px;
+    text-align: center;
+  }
+}
+/*
+========================================================================================================================
+MEDIA QUERIES 769px
+========================================================================================================================
+*/
+@media (min-width: 769px) {
+  .imagenes {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .footers {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.3;
+    padding: 20px;
+  }
+
+  .footers .fas {
+    transition: color;
+  }
+
+  .footers .fas:hover {
+    color: rgb(214, 79, 79);
+  }
+}
